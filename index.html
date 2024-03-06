@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="fonts.css">
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="stylesheet" type="text/css" href="lab 4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Common Website Features</title>
+</head>
+<body>
+  <section class="hero-container">
+    <div class="hero-image">
+      <div class="hero-container">
+        <h1>Hero Banner</h1>
+        <h2>Lab 4: Website Features</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-container">
+    <div class="content-image">
+      <div class="content-container">
+          <h1>Content Image</h1>
+          <p>Dark blue calming sky. Super dreamy and beautiful to look at.</p>
+          <i class="fa-solid fa-cloud"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="accordion-container">
+   <div class="accordion">
+    <div class="contentBx">
+      <div class="title">About Bora Bora</div>
+      <div class="content">
+        <p>Very vibrant crystal clear lagoon, with beautiful sandy beaches. There is lot's to do in Bora Bora like hiking,tanning in the sun, walking along the shore, swimming, spa day and more.</p>
+      </div>
+    </div>
+    <div class="contentBx">
+      <div class="title">Why it's My Dream Vacation</div>
+      <div class="content">
+        <p>One of the main reason I would love to go there is to swim with the pigs! Bora Bora has always been my dream vacation because of how beautiful it is and how relaxing it seems.</p>
+      </div>
+    </div>
+    <div class="contentBx">
+      <div class="title">What The Resort is Like</div>
+      <div class="content">
+        <p>Bora Bora has their resort on the water, which attaches to the island. It's amazing because you can go swimming straight from your room.</p>
+      </div>
+    </div>
+   </div>
+
+<script>
+  const accordion = document.getElementsByClassName
+  ('contentBx');
+  for (i = 0; i<accordion.length; i++ ){
+    accordion[i].addEventListener('click', function(){
+       this.classList.toggle('active')
+    })
+  }
+</script>
+  </section>
+
+  <section class="footer">
+<footer>
+  
+    <div class="footer-container">
+      <div class="pacifico-regular">
+        <h2>Links</h2>
+      <div class="borabora">
+      <h3>
+         <a href="https://www.fourseasons.com/borabora/">Bora Bora Booking<i class="arrow right"></i></a>
+      </h3>
+       <h3>
+      <a href="https://www.tripadvisor.ca/Attractions-g311415-Activities-Bora_Bora_Society_Islands.html">What To Do<i class="arrow right"></i></a>
+       </h3>
+       <h3>
+      <a href="https://www.expedia.ca/Cheap-Flights-To-Bora-Bora.d602861.Travel-Guide-Flights">Flights<i class="arrow right"></i></a>
+      <h3>
+       <a href="caryss.hill@edu.sait.ca">Contact Me<i class="arrow right"></i></a>
+      </h3>
+       </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122413.73935366773!2d-151.8208793047067!3d-16.50440792719879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bdbd188a4a98ab%3A0x160a089e92d5ce61!2sBora%20Bora!5e0!3m2!1sen!2sca!4v1709701249067!5m2!1sen!2sca" width="500" height="300" style="border:5px black;float:right;margin-top: -203px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+       </h3>
+       <div class="copyright">
+       <h4>Copyright © 2024 SAIT Student, inc </h4>
+      </div>
+    </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,161 @@
+html, body {
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   min-height: 100vh;
+   background: lightblue;
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+
+.hero-image {
+    position: relative;
+    top: 80%;
+    background: url(pexels-asad-photo-maldives-457881.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: darkcyan;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.hero-container h1{
+    margin: 0;
+    font-size: 4rem;
+
+}
+
+.content-image {
+    position: relative;
+    background: url(pexels-chama-691901.jpg) no-repeat center;
+    background-size: contain;
+    height: 600px;
+    border: 24px darkgrey;
+    padding: 3px;
+    margin: 200px;
+    border-style: double;
+}
+ 
+.content-container {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    text-transform:lowercase;
+    margin-top: 200px;
+ }
+
+
+ .accordion-container {
+text-align: left;
+margin-top: -600px;
+ }
+
+.accordion {
+    max-width: 1300px;
+    
+}
+
+.accordion .contentBx {
+position: relative;
+margin: 20px 25px;
+align-content: center;
+}
+
+.accordion .contentBx .title {
+    position: relative;
+    padding: 25px;
+    background: darkgrey;
+    color: aliceblue;
+    cursor: pointer;
+    align-content: center;
+    
+}
+
+.accordion .contentBx .title::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion .contentBx.active .title::before {
+content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background: aliceblue;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+
+}
+
+.accordion .contentBx.active .content {
+    height: 100px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #f2efea;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .footer-container h2{
+    margin: 60px 30px;
+  }
+ 
+a {
+    color: darkcyan;
+    margin: 20px 30px;
+}
+
+
+.arrow {
+    border: solid darkcyan;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.copyright h4{
+    margin: 20px 30px;
+    margin-top: 188px;
+    font-size: small;
+    text-align: center
+
+}
+
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
